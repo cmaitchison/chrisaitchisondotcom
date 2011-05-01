@@ -5,7 +5,7 @@ author:
   email:   cmaitchison@gmail.com 
   open_id:                 
       - https://www.google.com/accounts/o8/id?id=AItOawljouMx61os8Mktmf47uetAZrvC1wd2SHE
-      - http://secondaryopenid.com
+      - https://www.google.com/accounts/o8/id?id=AItOawkkPT3sdOewEgmdp2xNXFfr9ZVkKf1bdsQ
 
 # Delete the following section if your site will not be acting as an OpenID delegate (http://wiki.openid.net/Delegation)
 # If you're deploying with mongrel, make sure you read http://rhnh.net/2008/04/13/nginx-openid-delegation-and-yadis
