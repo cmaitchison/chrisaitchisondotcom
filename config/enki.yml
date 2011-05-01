@@ -3,8 +3,8 @@ url:   http://www.chrisaitchison.com
 author:
   name:    Chris Aitchison
   email:   cmaitchison@gmail.com 
-  open_id:                  # These are used to login to the admin area
-      - http://enkiblog.com
+  open_id:                 
+      - https://www.google.com/accounts/o8/id?id=AItOawljouMx61os8Mktmf47uetAZrvC1wd2SHE
       - http://secondaryopenid.com
 
 # Delete the following section if your site will not be acting as an OpenID delegate (http://wiki.openid.net/Delegation)
