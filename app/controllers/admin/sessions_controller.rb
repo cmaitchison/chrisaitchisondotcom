@@ -21,9 +21,8 @@ class Admin::SessionsController < ApplicationController
     else
       authenticate_with_open_id(params[:openid_url]) do |result, identity_url|
         if result.successful?
-          identity_url = URI.parse identity_url
-          Rails.logger.info "OpenID Identity URL: #{identity_url}"
-          if enki_config.author_open_ids.include? identity_url
+          Rails.logger.info "Returned OpenID Identity URL: #{identity_url}"
+          if enki_config.author_open_ids.include? URI.parse(identity_url)
             return successful_login
           else
             flash.now[:error] = "You are not authorized"
