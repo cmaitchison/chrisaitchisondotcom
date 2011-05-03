@@ -6,6 +6,8 @@ author:
   open_id:                 
       - https://www.google.com/accounts/o8/id?id=AItOawljouMx61os8Mktmf47uetAZrvC1wd2SHE
       - https://www.google.com/accounts/o8/id?id=AItOawnN18ZWmdwfBGRRWyM5xCwO4a5cD0nRnC0
+      - https://www.google.com/accounts/o8/id?id=AItOawnss1bNS_dG8NIDYszBxnH9ydjp5Bk9VCs
+      - https://www.google.com/accounts/o8/id?id=AItOawmeIqlLPuojlnTUoUn1hJ8D4V814v1AF8E
 
 # Delete the following section if your site will not be acting as an OpenID delegate (http://wiki.openid.net/Delegation)
 # If you're deploying with mongrel, make sure you read http://rhnh.net/2008/04/13/nginx-openid-delegation-and-yadis
