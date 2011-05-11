@@ -22,4 +22,5 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'hpricot'
+  gem 'silent-postgres' # silences spammy PG gem logging statements at debug level
 end
