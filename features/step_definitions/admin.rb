@@ -1,5 +1,7 @@
 Given /I am logged in/ do
-  post '/admin/session', :bypass_login => '1'
+  visit "/admin/session/new"
+  check "bypass_login"
+  click_button "Login with OpenID"
 end
 
 Then /a RuntimeError is thrown when I press "(.*)"/ do |button|
