@@ -8,3 +8,4 @@ Enki::Application.configure do
   config.active_support.deprecation = :notify
 end
 Enki::Config.default[:disqus_name]="chrisaitchisondotcom-staging"
+Enki::Config.default[:disqus_url]="chrisaitchisondotcom-staging.heroku.com"

@@ -48,3 +48,4 @@ Enki::Application.configure do
   config.active_support.deprecation = :notify
 end
 Enki::Config.default[:disqus_name]="chrisaitchisondotcom"
+Enki::Config.default[:disqus_url]="chrisaitchison.com"

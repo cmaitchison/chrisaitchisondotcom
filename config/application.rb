@@ -49,3 +49,4 @@ module Enki
 end
 require 'enki/config'
 Enki::Config.default[:disqus_name]="chrisaitchisondotcom-dev"
+Enki::Config.default[:disqus_url]="chrisaitchisondotcom-dev.heroku.com"
