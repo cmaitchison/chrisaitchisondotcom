@@ -181,7 +181,7 @@ div.meta
 }
 /* Formatting */   
 
-.meta ul
+.meta>ul
 {
   list-style: none;
   margin: 0px;
@@ -207,17 +207,17 @@ div.meta
   text-decoration: none;
 }
 
-.meta ul li
+.meta>ul>li
 {
   display: inline;
 }
  
-.meta ul li:after
+.meta>ul>li:after
 {
   content: " | ";
 }
 
-.meta ul li:last-child:after
+.meta>ul>li:last-child:after
 {
   content: "";
 }
