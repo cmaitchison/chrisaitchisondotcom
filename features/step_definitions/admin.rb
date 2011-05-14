@@ -1,7 +1,7 @@
 Given /I am logged in/ do
   visit "/admin/session/new"
   check "bypass_login"
-  click_button "Login with OpenID"
+  click_button "Login with Google account"
 end
 
 Then /a RuntimeError is thrown when I press "(.*)"/ do |button|

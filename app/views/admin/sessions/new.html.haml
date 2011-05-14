@@ -1,0 +1,11 @@
+%h1= link_to(enki_config[:title], '/')
+- if flash[:error]
+  %p= flash[:error]
+= form_tag(admin_session_path) do
+  %h2 Identify yourself!
+  %p= hidden_field_tag 'openid_url', 'https://www.google.com/accounts/o8/id'
+  - if allow_login_bypass?
+    %p
+      = check_box_tag 'bypass_login'
+      %label{:for => "bypass_login"} Bypass credentials check
+  %p= submit_tag("Login with Google account")
