@@ -1,0 +1,23 @@
+%h2= link_to(post.title, post_path(post))
+.entrybody
+  = raw post.body_html
+.meta
+  %ul
+    %li.date
+      Posted by
+      %a{:href => "http://twitter.com/#!/cmaitchison", :target => "_blank"} @cmaitchison
+      on #{format_post_date(post.published_at)}
+    %li.comments= link_to(pluralize(post.approved_comments.size, "comment"), post_path(post, :anchor => 'comments'))
+    - unless post.tags.empty?
+      %li.tags
+        Tagged #{linked_tag_list(post.tags)}
+  #disqus_thread
+    %script{:type => "text/javascript"}
+      var disqus_shortname = '#{enki_config[:disqus_name]}';
+      var disqus_identifier = 'post_id_#{post.id}';
+      var disqus_url = 'http://chrisaitchison.com#{post_path(post)}';
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();

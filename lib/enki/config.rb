@@ -2,6 +2,7 @@ require 'delegate'
 
 module Enki
   class Config < SimpleDelegator
+    
     def initialize(file_name)
       super(symbolize_keys(YAML::load(IO.read(file_name))))
     end
@@ -17,7 +18,7 @@ module Enki
     end
 
     def self.default
-      Enki::Config.new(default_location)
+      @@instance ||= Enki::Config.new(default_location)
     end
 
     def self.default_location

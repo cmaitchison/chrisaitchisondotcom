@@ -47,3 +47,5 @@ module Enki
     config.active_record.schema_format = :sql
   end
 end
+require 'enki/config'
+Enki::Config.default[:disqus_name]="chrisaitchisondotcom-dev"
