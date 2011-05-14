@@ -3,8 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', "= 3.0.7"
 
 gem "pg"
-
-# Bundle the extra gems:
 gem 'RedCloth', :require => 'redcloth'
 gem 'ruby-openid', :require => 'openid'
 gem 'rack-openid', :require => 'rack/openid'
@@ -13,6 +11,7 @@ gem 'coderay'
 gem 'lesstile'
 gem 'formtastic'
 gem 'will_paginate', '= 3.0.pre2'
+gem 'haml'
 
 group :development, :test do
   gem 'cucumber-rails'
