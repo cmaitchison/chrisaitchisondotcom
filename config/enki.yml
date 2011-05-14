@@ -4,7 +4,5 @@ author:
   name:    Chris Aitchison
   email:   cmaitchison@gmail.com 
   open_id:                 
-      - https://www.google.com/accounts/o8/id?id=AItOawljouMx61os8Mktmf47uetAZrvC1wd2SHE
-      - https://www.google.com/accounts/o8/id?id=AItOawnN18ZWmdwfBGRRWyM5xCwO4a5cD0nRnC0
-      - https://www.google.com/accounts/o8/id?id=AItOawnss1bNS_dG8NIDYszBxnH9ydjp5Bk9VCs
-      - https://www.google.com/accounts/o8/id?id=AItOawmeIqlLPuojlnTUoUn1hJ8D4V814v1AF8E
+      - https://www.google.com/accounts/o8/id?id=AItOawmeIqlLPuojlnTUoUn1hJ8D4V814v1AF8E # production
+      - https://www.google.com/accounts/o8/id?id=AItOawmia2B5atlsSFqIisEAJnHWAan3uqTS3V0 # staging
