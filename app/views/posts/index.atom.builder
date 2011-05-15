@@ -11,7 +11,7 @@ atom_feed(
 ) do |feed|
   feed.title     posts_title(@tag)
   feed.updated   @posts.empty? ? Time.now.utc : @posts.collect(&:edited_at).max
-  feed.generator "Enki", "uri" => "http://enkiblog.com"
+  feed.generator "chrisaitchison", "uri" => "http://chrisaitchison.com"
 
   feed.author do |xml|
     xml.name  author.name
