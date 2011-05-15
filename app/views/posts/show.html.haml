@@ -4,10 +4,8 @@
 .sharing
   %ul
     %li
-      = twitter_button
-      = twitter_button_script
-
-#empty      
+      = twitter_button @post
+      = twitter_button_script    
 #disqus_thread
   %script{:type => "text/javascript"}
     = show_thread_for @post
