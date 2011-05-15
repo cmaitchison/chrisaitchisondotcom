@@ -1,0 +1,151 @@
+/* High level containers */
+body 
+{ 
+  color: black;
+  font: normal 12px verdana, arial, helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 0px;
+  margin: 0px;
+}
+
+#page_container
+{
+  position: absolute;
+  min-height: 400px;
+  color: black;
+  width: 100%;
+}
+
+#content
+{
+  width: 900px;
+  margin: 5px auto;
+  position: relative;
+  padding-right: 55px;
+}
+
+#footer
+{
+  position: relative;
+  font-size: 8pt;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: gray;
+}
+
+#sidebar 
+{
+  position: absolute;
+  width: 15em;
+  top: 70px; 
+  right: -100px;
+
+  border: none;
+  padding: 5px;
+}
+
+
+/* Headings */
+h1#page_heading
+{
+  font-size: 24pt;
+  color: #000 !important;
+}
+
+h2
+{
+  font-size: 1.4em;
+}
+
+/* Text */
+p 
+{
+  padding: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+strong
+{
+  color: #333333;
+}
+
+a 
+{
+  color: #000051;
+  text-decoration: none;    
+}
+  
+small a, label a
+{
+  text-decoration: underline;
+}
+
+a:hover
+{
+  text-decoration: underline;    
+}
+  
+#footer a
+{
+  color: #000051;
+}
+
+#main 
+{
+  padding-right: 150px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+div.meta, div.sharing
+{
+ margin-top: 1em;
+ margin-bottom: 3em; 
+}
+/* Formatting */   
+
+.meta ul, .sharing ul
+{
+  list-style: none;
+  margin: 0px;
+  padding-left: 0em;
+  padding-bottom: 0.5em;
+  display: inline;
+  color: #cccccc;
+	font-size: 9pt;
+}
+
+.meta a
+{
+  color: #bbbbbb;
+  border-bottom: dotted 1px #bbbbbb;
+}
+
+.meta a:hover
+{
+  text-decoration: none;
+  color: #000051;
+  border-bottom: none;
+}
+
+.meta ul li, .sharing ul li
+{
+  display: inline;
+  vertical-align:top;
+}
+ 
+.meta ul li:after
+{
+  content: " | ";
+}
+
+.meta ul li:last-child:after
+{
+  content: "";
+}
+

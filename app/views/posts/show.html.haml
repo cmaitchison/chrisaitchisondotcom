@@ -1,9 +1,13 @@
-- content_for(:head) do
-  = javascript_include_tag 'common'
-  = javascript_include_tag 'live-comment-preview'
 - content_for(:page_title) do
   = post_title(@post)
 = render :partial => 'posts/post', :locals => {:post => @post}
+.sharing
+  %ul
+    %li
+      = twitter_button
+      = twitter_button_script
+
+#empty      
 #disqus_thread
   %script{:type => "text/javascript"}
     = show_thread_for @post

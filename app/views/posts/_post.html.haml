@@ -12,7 +12,5 @@
         Tagged #{linked_tag_list(post.tags)}
     %li
       %a{:href => post_path(post)+ "#disqus_thread", :data => {"disqus-identifier" => "post_id_#{post.id}"}}#{post.title}
-       
-  #disqus_thread
-    %script{:type => "text/javascript"}
-      = show_comment_counts
+      %script{:type => "text/javascript"}
+        = show_comment_counts
