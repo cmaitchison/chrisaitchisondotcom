@@ -1,0 +1,28 @@
+!!!
+%html{:dir => "ltr", :lang => "en-US"}
+  %head
+    %meta{:charset => "utf-8"}
+      %title= html_title yield(:page_title)
+      = csrf_meta_tag
+      = stylesheet_link_tag 'posts'
+      = yield(:head)
+      %script{:type => "text/javascript"}
+        =analytics_javascript 
+    %body
+    #page_container
+      #content
+        %h1#page_heading
+          %a{:href => root_url}= enki_config[:title]
+        #main
+          = yield
+        #footer
+          Powered by
+          %a{:href => "http://www.enkiblog.com", :target => "_blank", :title => "Enki"} Enki.
+        #sidebar
+          = display_twitter_feed
+          = twitter_button
+          = twitter_button_script
+          = facebook_like_button
+          
+       
+          
