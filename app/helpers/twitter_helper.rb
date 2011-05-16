@@ -19,9 +19,9 @@ module TwitterHelper
     new TWTR.Widget({
         version: 2,
         type: 'profile',
-        rpp: 5,
+        rpp: 7,
         interval: 6000,
-        width: 250,
+        width: 240,
         height: 300,
         theme: {
           shell: {
@@ -39,7 +39,7 @@ module TwitterHelper
           loop: true,
           live: false,
           hashtags: true,
-          timestamp: true,
+          timestamp: false,
           avatars: true,
           behavior: 'default'
         }
