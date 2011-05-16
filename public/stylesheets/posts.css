@@ -18,7 +18,7 @@ body
 
 #content
 {
-  width: 900px;
+  width: 800px;
   margin: 5px auto;
   position: relative;
   padding-right: 55px;
@@ -39,7 +39,7 @@ body
   position: absolute;
   width: 15em;
   top: 70px; 
-  right: -100px;
+  right: 0px;
 
   border: none;
   padding: 5px;
@@ -136,7 +136,7 @@ div.meta, div.sharing
 .meta ul li, .sharing ul li
 {
   display: inline;
-  vertical-align:top;
+  vertical-align:bottom;
 }
  
 .meta ul li:after
@@ -149,3 +149,23 @@ div.meta, div.sharing
   content: "";
 }
 
+.twtr-ft a,a.twtr-user, .twtr-hd
+{
+   display:none !important;
+}
+
+.facebook_like
+{
+  border:none;
+  width:230px;
+  margin-left:10px;
+  margin-top:40px;
+  height:250px
+}
+
+.twitter_follow_me_button
+{
+  margin-top:25px;
+  margin-left:40px;   
+}
+    

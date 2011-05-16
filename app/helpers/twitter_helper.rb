@@ -10,7 +10,7 @@ module TwitterHelper
   end
   
   def follow_me_on_twitter
-    link_to image_tag("http://twitter-badges.s3.amazonaws.com/follow_me-c.png", :alt => "Follow cmaitchison on Twitter"), "http://www.twitter.com/cmaitchison", :target => "_blank"
+    link_to image_tag("http://twitter-badges.s3.amazonaws.com/follow_me-b.png", :alt => "Follow cmaitchison on Twitter"), "http://twitter.com/intent/user?screen_name=cmaitchison", :target => "_blank"
   end
   
   def display_twitter_feed
@@ -19,7 +19,7 @@ module TwitterHelper
     new TWTR.Widget({
         version: 2,
         type: 'profile',
-        rpp: 7,
+        rpp: 10,
         interval: 6000,
         width: 240,
         height: 300,
