@@ -1,11 +1,6 @@
 - content_for(:page_title) do
   = post_title(@post)
 = render :partial => 'posts/post', :locals => {:post => @post}
-.sharing
-  %ul
-    %li
-      = twitter_button @post
-      = twitter_button_script    
 #disqus_thread
   %script{:type => "text/javascript"}
     = show_thread_for @post

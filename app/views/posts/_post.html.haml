@@ -14,3 +14,7 @@
       %a{:href => post_path(post)+ "#disqus_thread", :data => {"disqus-identifier" => "post_id_#{post.id}"}}#{post.title}
       %script{:type => "text/javascript"}
         = show_comment_counts
+    %li
+      = twitter_button post
+      = twitter_button_script
+      
