@@ -6,7 +6,7 @@ module DisqusHelper
       var disqus_identifier = 'post_id_#{post.id}';
       var disqus_url = '#{"http://" + enki_config[:disqus_url] + post_path(post)}';
       var disqus_title = '#{post.title}';
-      
+      var disqus_developer = #{%w(development test).include?(Rails.env)};
       (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
