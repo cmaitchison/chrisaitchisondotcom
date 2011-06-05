@@ -2,7 +2,7 @@ module TwitterHelper
 
   def twitter_button post=nil
     path_to_post = post.nil? ? "http://chrisaitchison.com" : post_path(post)
-    text = post.nil? ? "Check out chrisaitchison.com -" : "#{post.title} -"
+    text = post.nil? ? "Check out chrisaitchison.com -" : "#{post.title}"
     link_to "Tweet", "http://twitter.com/share", :class => 'twitter-share-button', "data-count" => "horizontal",
       "data-via" => "cmaitchison", "data-url" => "http://chrisaitchison.com#{path_to_post}", "data-text" => text
   end
